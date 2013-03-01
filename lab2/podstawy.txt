@@ -1,0 +1,72 @@
+System kontroli wersji (ang. version/revision control system) jest to oprogramowanie s³u¿¹ce do œledzenia 
+zmian 
+g³ównie w kodzie Ÿród³owym oraz pomocy programistom w ³¹czeniu zmian dokonanych przez wiele osób w ró¿nych 
+momentach.
+
+Workflow - to system obiegu dokumentów wspieraj¹cy realizacjê procesów biznesowych. Narzêdzie pomaga w 
+koordynacji prac prowadzonych przez wielu uczestników jednoczeœnie. System posiada czytelny i prosty edytor 
+procesów, pozwalaj¹cy na tworzenie diagramów obrazuj¹cych obieg informacji. Jednoczeœnie umo¿liwia 
+generowanie formularzy, za poœrednictwem których uczestnicy komunikuj¹ siê z systemem i ze sob¹ nawzajem. 
+Wówczas na podstawie utworzonego procesu nastêpuje odpowiedni przep³yw spraw pomiêdzy pracownikami. 
+Obrazuj¹c 
+zagadnienie od strony praktyczniej, pracownik otrzymuje dostêp do skrzynki, w której znajduj¹ siê aktualne 
+sprawy wymagaj¹ce rozpatrzenia. Po wykonaniu zadania uzupe³nia przygotowane formularze, do³¹cza dokumenty i 
+przekazuje sprawê dalej. System automatycznie podejmie decyzjê do kogo nale¿y j¹ skierowaæ w nastêpnej 
+kolejnoœci. Mo¿e równie¿ automatycznie do³¹czyæ czêœæ informacji wnioskuj¹c z pracy wykonanej przez 
+uczestników.
+
+Typowym przyk³adem zastosowania Workflow to proces akceptacji ró¿nego rodzaju wniosków. Praca zazwyczaj 
+wymaga przeprowadzenia wielu etapów i œcis³ej wspó³pracy pomiêdzy uczestnikami: przygotowanie dokumentacji 
+opiniowanie, kalkulacje. Fizycznie z ka¿d¹ tak¹ spraw¹ powi¹zana jest teczka z jej dokumentacj¹. Pracownik 
+musi dobrze znaæ proces aby móc zdecydowaæ dok¹d dalej skierowaæ sprawê w zale¿noœci od wyników w³asnej 
+pracy. System Workflow pozwala na uproszczenie czynnoœci zwi¹zanych z przetwarzaniem takich zadañ. Ca³a 
+dokumentacja procesu przechowywana jest w postaci elektronicznej, do której dostêp jest ograniczany za 
+pomoc¹ 
+rozbudowanego mechanizmu uprawnieñ. Ka¿dy uczestnik dodaje do systemu efekty swojej pracy za poœrednictwem 
+dedykowanych formularzy. System automatycznie zdecyduje do kogo skierowaæ sprawê na podstawie efektów pracy 
+osób, które ju¿ ukoñczy³y swój udzia³. Miedzy pracownikami nie wêdruje dokumentacja papierowa. Proces mo¿e 
+zawieraæ czynnoœci wykonywane jednoczeœnie przez wiele osób.
+
+Systemy kontroli wersji dziel¹ siê na:
+scentralizowane, oparte na architekturze klient-serwer (np. CVS, Subversion)
+rozproszone, oparte na architekturze P2P (np. BitKeeper, Code Co-op, svk, Git).
+W tych pierwszych istnieje jedno centralne repozytorium, z którym wszyscy u¿ytkownicy systemu synchronizuj¹ 
+swoje zmiany, a te drugie pozwalaj¹ na prowadzenie równoprawnych, niezale¿nych ga³êzi, które mo¿na dowolnie 
+synchronizowaæ ze sob¹ nawzajem, np. poprzez e-mail (Code Co-op). Wybór odpowiedniego typu systemu kontroli 
+wersji zale¿y od potrzeb projektu.
+
+    init- tworzy repozytorium w katalogu w ktorym sie znajdujemy
+    
+    clone - kopiowanie repozytotium
+    
+    add - dodaje wszystkie pliki w katalogu do repozytorium
+
+    status - pokaze pliki ktore sie zmienily, ktore nie dodalismy jeszcze do repozytorium
+
+    diff -  exportowanie danej ga³êzi. newbranch to ga³¹Ÿ któr¹ eksportujemy do paczki
+    
+    commit-  wykonujemy zapis aktualnej wersji projektu
+    
+    reset - cofa do wybranego commita
+       
+    rm -  Usuwanie plików z repozytorium w sposób rekursywny. Plik kasowany jest rowniez z katalogu projektu
+    
+    mv - przeniesienie lub zmiana nazwy pliku katalogu
+    
+    branch - wyswietla wszystkie ga³êzie rozwojowe (ga³¹Ÿ na której pracujemy jest oznaczona * i zielonym 
+    kolorem)
+    
+    checkout - prze³¹czamy siê na inn¹ ga³¹Ÿ
+    
+    merge -  ³¹czenie dwóch kopii pliku w jeden
+    
+    log - pokaze ostatnio wykonane commity z ga³êzi na której aktualnie pracujemy
+    
+    stash - Jest to taki schowek, do którego mo¿na wrzuciæ aktualne zmiany
+    
+    pull -  pobiera dane z serwera na bazie którego oryginalnie stworzy³eœ swoje repozytorium i próbuje 
+    automatycznie scaliæ zmiany z kodem roboczym nad którym aktualnie, lokalnie pracujesz.
+    push -  wypycha ga³¹Ÿ g³ówn¹ master na oryginalny serwer Ÿród³owy
+    
+    
+    
