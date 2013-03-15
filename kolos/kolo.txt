@@ -1,0 +1,25 @@
+Teraz uwaga. To jedna z najwa¿niejszych spraw do zapamiêtania jeœli chodzi o pracê z Git, jeœli dalszy proces 
+nauki ma przebiegaæ sprawnie. Git posiada trzy stany, w których mog¹ znajdowaæ siê pliki: zatwierdzony, 
+zmodyfikowany i œledzony. Zatwierdzony oznacza, ¿e dane zosta³y bezpiecznie zachowane w Twojej lokalnej bazie 
+danych. Zmodyfikowany oznacza, ¿e plik zosta³ zmieniony, ale zmiany nie zosta³y wprowadzone do bazy danych. 
+Œledzony - oznacza, ¿e zmodyfikowany plik zosta³ przeznaczony do zatwierdzenia w bie¿¹cej postaci w nastêpnej 
+operacji commit.
+Z powy¿szego wynikaj¹ trzy g³ówne sekcje projektu Git: katalog Git, katalog roboczy i przechowalnia (ang. 
+staging area).
+Figure 1-6. Katalog roboczy, przechowalnia, katalog git.
+Katalog Git jest miejscem, w którym Git przechowuje w³asne metadane oraz obiektow¹ bazê danych Twojego 
+projektu. To najwa¿niejsza czêœæ Git i to w³aœnie ten katalog jest kopiowany podczas klonowania repozytorium z 
+innego komputera.
+
+Katalog roboczy stanowi obraz jednej wersji projektu. Zawartoœæ tego katalogu pobierana jest ze skompresowanej 
+bazy danych zawartej w katalogu Git i umieszczana na dysku w miejscu, w którym mo¿na j¹ odczytaæ lub 
+zmodyfikowaæ.
+
+
+Znasz 3 stany plików w systemie git(zmodyfikowany, w przechowalni, zatwierdzony) i potrafisz rozró¿niæ w jakim stanie znajduje siê aktualnie plik.
+Wiesz czym jest repozytorium i znasz zasadê jego dzia³ania.
+Potrafisz dodawaæ/usuwaæ pliki z przechowalni, zatwierdzaæ zmiany, wysy³aæ pliki na zdalne repozytorium.
+Znasz zasadê dzia³ania ga³êzi w systemie git i wiesz do czego one s³u¿¹.
+Potrafisz tworzyæ nowe ga³êzie, prze³¹czaæ siê pomiêdzy ga³êziami oraz scalaæ ga³êzie
+Wiesz w jaki sposób ignorowaæ pliki znajduj¹ce siê w katalogu roboczym projektu
+Upewnij siê ¿e posiadasz zdalne repozytorium zawieraj¹ce pliki i odpowiedzi na pytania z poprzednich zajêæ
