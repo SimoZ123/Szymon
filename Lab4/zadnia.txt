@@ -1,0 +1,19 @@
+wyœwietlenie informacji o poleceniach (pomocy), - Help
+wyœwietlanie zawartoœci bie¿¹cego katalogu- chdir
+utworzenie katalogu o nazwie 'katalog'-mk dir
+utworzenia pliku o nazwie 'plik.txt'- dir plik.txt 
+wyœwietlenie zawartoœci pliku 'plik.txt' - type
+przejœcie do katalogu nadrzêdnego- cd\
+przejœcie do katalogu 'lab4' - cd:\
+zmianê nazwy pliku 'plik.txt' na 'inny_plik.txt'- rename
+
+2
+podgl¹du wszystkich zatwierdzonych zmian - git log
+podgl¹du wprowadzonych w repozytorium zmian - git diff
+podgl¹du wprowadzonych zmian plików które s¹ juz w przechowalni - git diff --staged
+podgl¹du zmian wprowadzonych w danym pliku - git status
+usuwania plików z repozytorium - git rm
+dodawanie plików do przechowalni - git add
+usuwanie plików z przechowalni - git reser HEAD
+przenoszenia plików znajduj¹cych siê w przechowalni do innej ga³êzi -  git stash
+usuwania ga³êzi - git branch -d
