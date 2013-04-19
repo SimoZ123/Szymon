@@ -1,0 +1,59 @@
+Asocjacje-czyli powi¹zania pomiêdzy obiektami klas.Asocjacje maj¹ nazwy, które wyznaczaj¹ znaczenie tej 
+asocjacji 
+w modelu pojêciowym. Je¿eli to znaczenie jest oczywiste, 
+wówczas nazwê asocjacji mo¿na pomin¹æ.Asocjacje mog¹ byæ wyposa¿one w oznaczenia licznoœci,Licznoœæ oznacza, 
+ile obiektów innej klasy mo¿e byæ powi¹zane 
+z jednym obiektem danej klasy (para liczb oznaczaj¹ca iloœæ
+minimaln¹ i maksymaln¹).Asocjacje mog¹ byæ tak¿e wyposa¿one w dodatkowe nazwy ról
+(przy odpowiednich koñcach).Asocjacje mog¹ posiadaæ atrybuty. W tym celu przewidziano
+liniê przerywan¹ ³¹cz¹c¹ dan¹ asocjacj¹ z klas¹, okreœlan¹ jako:
+„klasa asocjacji”Wewn¹trz klasy asocjacji mo¿na zdefiniowaæ atrybuty,
+operacje i inne cechy asocjacji. Klasa asocjacji mo¿e byæ uwa¿ana 
+za samodzieln¹ klasê - w szczególnoœci podlega zwi¹zkom 
+dziedziczenia i asocjacji. Asocjacje mog¹ byæ równie¿ n-arne
+(oznaczenie - pusty w œrodku romb).Na diagramach UML mo¿na zaznaczyæ kierunek nawigacji
+wzd³u¿ danej asocjacji.W takim przypadku asocjacja jest
+rysowana w postaci strza³ki; nawigacja 
+jest mo¿liwa zgodnie z jej kierunkiem, 
+ale nie odwrotnie.
+AGREGACJE-szczególny przypadek asocjacji 
+wyra¿aj¹cy zale¿noœæ: czêœæ –ca³oœæ.
+Oznacza siê je za pomoc¹ pustego rombu.Klasa emerytowanych pracowników dziedziczy zarówno od klasy Emeryt, 
+jak i od klasy Pracownik, wówczas obiekt emerytowanego pracownika zawiera jako 
+swoj¹ „czêœæ” inny obiekt grupuj¹cy informacjê o cechach osoby jako emeryta. 
+Mówi siê, ¿e obiekty pracownika i emeryta pozostaj¹ w zwi¹zku agregacji
+(emeryt „jest czêœci¹” pracownika).
+KOMPOZYCJA
+Dana czêœæ mo¿e nale¿eæ tylko do jednej ca³oœci
+Co wiêcej, czêœæ nie mo¿e istnieæ bez ca³oœci 
+– pojawia siê i jest usuwana wraz z ca³oœci¹.
+Zatem usuniêcie ca³oœci powoduje automatyczne usuniêcie 
+wszystkich czêœci zwi¹zanych z ni¹ zwi¹zkiem kompozycji.Kompozycje oznacza siê za pomoc¹ wype³nionego rombu.
+DZIEDZICZENIE
+Obiekt pod-klasy automatycznie dziedziczy wszystkie atrybuty, 
+metody, asocjacje i agregacje z wszystkich jej nadklas.
+SPECJALIZACJA 
+– budowa pojêæ bardziej szczegó³owych, gdy mamy bardziej ogólne
+GENERALIZACJA
+– budowa pojêæ bardziej ogólnych, gdy mamy bardziej szczegó³owe
+DZIEDZICZENIE WIELOASPEKTOWE
+Stosuje siê specjalne oznaczenia, gdy zakresy znaczeniowe klas 
+nie s¹ roz³¹czne. Mo¿na wtedy zadeklarowaæ aspekt wed³ug 
+którego specjalizuje siê dany obiekt,oraz oznaczyæ ten fakt
+overlapping – podzia³ nieroz³¹czny (przeciêcie zakresów 
+znaczeniowych nie jest zbiorem pustym).Dodatkowo mo¿na równie¿ odnotowaæ fakty, ¿e:
+• podklasy s¹ roz³¹czne (disjoint)
+{disjoint,
+• nie pokrywaj¹ ca³ego zakresu znaczeniowego ich nadklasy
+(incomplete)
+DZIEDZICZENIE WIELOKROTNE
+Wielokrotnie dziedziczenie prowadzi do anomalii i wad 
+koncepcji. W wiêkszoœci anomalie s¹ konsekwencj¹ faktu, 
+¿e przy pomocy wielodziedziczenia próbuje siê opanowaæ
+koncepcjê dynamicznych ról obiektu.
+Asocjacja
+FIRMA <------ osoba
+Agregacja
+samochód<>-----Silnik
+Kompozycja
+zamówienie<>----pozycja zamówienie(r¹b zamalowany)
